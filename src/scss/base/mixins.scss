@@ -3,12 +3,16 @@
 @mixin btn {
   width: 244px;
   height: 60px;
-  padding-left: 50px;
-  padding-right: 50px;
-  padding-top: 19px;
-  padding-bottom: 19px;
+  padding: 19px 50px;
   background: black;
   text-align: center;
   color: $ui-color-yellow;
   font-size: 20px;
+}
+
+@mixin highlight {
+  color: $ui-color-blue;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 32px;
 }

@@ -45,7 +45,7 @@
       </div>
       <div class="promo__cta">
         <div class="promo__cta-descr">Available on all platforms</div>
-        <div class="btn promo__cta-btn">Learn more</div>
+        <button class="btn promo__cta-btn">Learn more</button>
       </div>
     </section>
     <section class="about">
@@ -79,6 +79,46 @@
           alt="city"
           class="about__img about__large"
         />
+      </div>
+    </section>
+    <section class="giveaway">
+      <img
+        src="/src/img/giveaway/giveaway-parallax.png"
+        class="giveaway__parallax"
+      />
+      <div class="container">
+        <div class="giveaway__wrapper">
+          <img
+            src="/src/img/giveaway/giveaway-xbox.png"
+            class="giveaway__img"
+          />
+          <img src="/src/img/giveaway/giveaway-ps.png" class="giveaway__img" />
+        </div>
+        <div class="giveaway__title">Play and win!</div>
+        <p class="giveaway__descr">
+          Play <span>Cyberpunk 2077</span> and get a chance to play on
+          <span>Xbox Series X</span> or <span>Sony PlayStation 5</span>! Fill
+          out the form below and attach a screenshot of your purchase. The
+          results of the giveaway will be announced on February 1st. Good luck!
+        </p>
+        <form action="#" class="giveaway__form">
+          <fieldset>
+            <input
+              type="text"
+              name="userName"
+              id="userName"
+              placeholder="What is your name?"
+            />
+            <input
+              type="text"
+              name="userEmail"
+              id="userEmail"
+              placeholder="Your email"
+            />
+            <input type="button" value="Attach a screenshot" />
+          </fieldset>
+        </form>
+        <button class="btn-send giveaway__btn">Send</button>
       </div>
     </section>
     <script type="module" src="/src/js/main.js"></script>
