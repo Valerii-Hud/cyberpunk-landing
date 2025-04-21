@@ -1,0 +1,24 @@
+@use "/src/scss/base/variables.scss" as *;
+
+.about {
+  padding-top: 70px;
+  &__descr {
+    margin-top: 25px;
+    color: #777777;
+    font-size: 16px;
+    line-height: 32px;
+    span {
+      color: $ui-color-blue;
+      font-size: 16px;
+      font-weight: 700;
+      line-height: 32px;
+    }
+  }
+  &__wrapper {
+    padding-top: 32px;
+    margin: 0;
+  }
+  &__img {
+    margin-top: 32px;
+  }
+}
