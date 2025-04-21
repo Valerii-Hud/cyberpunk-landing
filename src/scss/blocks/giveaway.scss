@@ -1,0 +1,71 @@
+@use "/src/scss/base/variables.scss" as *;
+@use "/src/scss/base/mixins.scss" as *;
+
+.giveaway {
+  position: relative;
+  padding-top: 140px;
+  &__parallax {
+    position: absolute;
+    top: 70px;
+  }
+  & > .container {
+    background-color: #000;
+  }
+  &__wrapper {
+    display: flex;
+    padding-top: 55px;
+    gap: 32px;
+  }
+  &__title {
+    margin-top: 25px;
+    color: white;
+    font-size: 30px;
+    font-family: "Cyberpunk";
+    font-weight: 400;
+  }
+  &__descr {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 32px;
+    span {
+      @include highlight;
+    }
+  }
+  &__form {
+    fieldset {
+      border: none;
+      margin: 0;
+      padding: 0;
+      input[type="text"] {
+        margin-top: 37px;
+        width: 100%;
+        padding: 0 13px 13px 0px;
+        color: white;
+        font-family: Roboto;
+        font-weight: 300;
+        background: transparent;
+        border: none;
+        border-bottom: 1px solid #777777;
+        font-size: 16px;
+        &::placeholder {
+          color: white;
+        }
+      }
+      input[type="button"] {
+        margin-top: 35px;
+        width: 100%;
+        height: 120px;
+        display: block;
+        background: transparent;
+        color: #fff;
+        padding: 50px auto 50px auto;
+        border: 2px dashed $ui-color-disabled;
+        text-decoration: underline;
+      }
+    }
+  }
+  &__btn {
+    margin-top: 35px;
+  }
+}
