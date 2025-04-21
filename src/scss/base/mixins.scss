@@ -1,0 +1,14 @@
+@use "/src/scss/base/variables.scss" as *;
+
+@mixin btn {
+  width: 244px;
+  height: 60px;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 19px;
+  padding-bottom: 19px;
+  background: black;
+  text-align: center;
+  color: $ui-color-yellow;
+  font-size: 20px;
+}

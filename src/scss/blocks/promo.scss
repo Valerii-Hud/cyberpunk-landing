@@ -1,0 +1,32 @@
+@use "/src/scss/base/variables.scss" as *;
+
+.promo {
+  height: 100vh;
+  background: url("/src/img/promo/bg-main.png") center center / cover no-repeat;
+
+  &__logo {
+    display: block;
+    padding-top: 20px;
+    margin: 0 auto;
+  }
+  &__wrapper {
+    position: relative;
+    padding-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  &__cta {
+    position: absolute;
+    bottom: 0;
+    padding: 30px;
+    font-size: 30px;
+    text-align: center;
+    clip-path: polygon(100% 0, 100% 80%, 80% 100%, 0 100%, 0 20%, 20% 0);
+    background-color: $ui-color-yellow;
+    font-family: "Cyberpunk";
+    &-btn {
+      margin-top: 25px;
+    }
+  }
+}
