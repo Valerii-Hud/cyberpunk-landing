@@ -7,6 +7,7 @@
     <title>Cyberpunk Landing</title>
   </head>
   <body>
+    <!-- ------- PROMO SECTION -------  -->
     <section class="promo">
       <div class="container">
         <img class="promo__logo" src="/src/img/promo/promo-logo.png" />
@@ -48,6 +49,8 @@
         <button class="btn promo__cta-btn">Learn more</button>
       </div>
     </section>
+
+    <!-- ------- ABOUT SECTION -------  -->
     <section class="about">
       <div class="container">
         <div class="title about__title">
@@ -81,6 +84,8 @@
         />
       </div>
     </section>
+
+    <!-- ------- GIVEAWAY SECTION -------  -->
     <section class="giveaway">
       <img
         src="/src/img/giveaway/giveaway-parallax.png"
@@ -119,7 +124,20 @@
           </fieldset>
         </form>
         <button class="btn-send giveaway__btn">Send</button>
+        <label for="userAccept" class="giveaway__accept">
+          <input
+            type="checkbox"
+            name="userAccept"
+            id="userAccept"
+            class="giveaway__accept__checkbox"
+          />
+          I agree to the processing of personal data
+        </label>
       </div>
+      <img
+        src="/src/img/giveaway/giveaway-end-section.png"
+        class="giveaway__end_section"
+      />
     </section>
     <script type="module" src="/src/js/main.js"></script>
   </body>

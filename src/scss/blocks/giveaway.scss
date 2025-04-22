@@ -68,4 +68,19 @@
   &__btn {
     margin-top: 35px;
   }
+  &__accept {
+    display: block;
+    margin-top: 20px;
+    color: white;
+    font-size: 12px;
+    font-family: Roboto;
+    font-weight: 300;
+    &__checkbox {
+      margin-right: 5px;
+    }
+  }
+  &__end_section {
+    background-color: #000;
+    padding-top: 70px;
+  }
 }
