@@ -1,0 +1,54 @@
+@use "/src/scss/base/variables.scss" as *;
+@use "/src/scss/base/mixins.scss" as *;
+
+.buy {
+  background-color: #000;
+  &__title {
+    margin-top: 40px;
+    color: #fff;
+  }
+  &__subtitle {
+    margin-top: 15px;
+    margin-bottom: 25px;
+    color: $ui-color-blue;
+    font-size: 20px;
+    font-family: Roboto;
+    font-weight: 700;
+    &-disk:before {
+      @include buy-icon;
+      background: url("/src/img/buy/buy-disk.png");
+    }
+    &-wysiwyg:before {
+      @include buy-icon;
+      top: 5px;
+      background: url("/src/img/buy/buy-wysiwyg.png");
+    }
+    &-collections:before {
+      @include buy-icon;
+      background: url("/src/img/buy/buy-collections.png");
+    }
+    &:nth-child(2n) {
+      margin-top: 45px;
+    }
+    &-text {
+      position: relative;
+      margin-top: 15px;
+      margin-left: 42px;
+      color: white;
+      font-size: 16px;
+      font-family: Roboto;
+      font-weight: 400;
+      &:first-child {
+        margin-top: 20px;
+      }
+    }
+  }
+  &__wrapper {
+    margin-top: 35px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 40px;
+    padding-bottom: 70px;
+  }
+}

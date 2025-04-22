@@ -25,3 +25,12 @@
   width: 24px;
   height: 24px;
 }
+
+@mixin buy-icon {
+  content: "";
+  display: block;
+  position: absolute;
+  left: -35px;
+  width: 24px;
+  height: 24px;
+}
