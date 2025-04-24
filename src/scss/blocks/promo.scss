@@ -22,11 +22,43 @@
     padding: 30px;
     font-size: 30px;
     text-align: center;
-    clip-path: polygon(100% 0, 100% 80%, 80% 100%, 0 100%, 0 20%, 20% 0);
+    clip-path: polygon(100% 0, 100% 80%, 93% 100%, 0 100%, 0 22%, 7% 0);
     background-color: $ui-color-yellow;
     font-family: "Cyberpunk";
     &-btn {
       margin-top: 25px;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .promo {
+    &__cta-wrapper {
+      display: flex;
+      justify-content: flex-end;
+    }
+    &__cta {
+      right: 40px;
+    }
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .promo {
+    &__content {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    &__wrapper {
+      gap: 40px;
+    }
+    &__logo {
+      margin: 0 0;
+    }
+    &__icon {
+      width: 30px;
+      height: 30px;
     }
   }
 }
