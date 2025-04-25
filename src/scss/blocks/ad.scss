@@ -34,6 +34,12 @@
     font-weight: 400;
     &-text {
       margin-top: 15px;
+      &::before {
+        width: 24px;
+        height: 24px;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
     }
     &-palete::before {
       @include ad-icon;
@@ -56,6 +62,9 @@
 
 @media screen and (min-width: 1024px) {
   .ad {
+    &__title {
+      font-size: 62px;
+    }
     &__content {
       display: flex;
       row-gap: 32px;
@@ -65,6 +74,18 @@
     }
     &__left {
       padding: 32px;
+    }
+    &__descr {
+      font-size: 18px;
+    }
+    &__promotion {
+      &-text {
+        font-size: 18px;
+        &::before {
+          width: 32px;
+          height: 32px;
+        }
+      }
     }
   }
 }

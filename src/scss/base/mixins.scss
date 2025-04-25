@@ -1,8 +1,8 @@
 @use "/src/scss/base/variables.scss" as *;
 
 @mixin btn {
-  width: 244px;
-  height: 60px;
+  min-width: 244px;
+  min-height: 60px;
   padding: 19px 50px;
   background: black;
   text-align: center;
