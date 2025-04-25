@@ -7,6 +7,7 @@
     position: absolute;
     top: 0px;
     width: 100%;
+    object-fit: cover;
   }
   & > .container {
     background-color: #000;
@@ -86,6 +87,7 @@
     width: 100%;
     height: 5vh;
     z-index: 0;
+    object-fit: cover;
   }
   &__img {
     width: 130px;
