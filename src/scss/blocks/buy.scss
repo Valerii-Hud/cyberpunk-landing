@@ -3,6 +3,10 @@
 
 .buy {
   background-color: #000;
+  &__img {
+    width: 100%;
+    object-fit: cover;
+  }
   &__title {
     margin-top: 40px;
     color: #fff;
@@ -50,5 +54,28 @@
     grid-template-rows: repeat(2, 1fr);
     gap: 40px;
     padding-bottom: 70px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .buy {
+    display: flex;
+    gap: 32px;
+    &__wrapper {
+      grid-template-columns: repeat(2, 0.1fr);
+    }
+    &__img {
+      width: 332px;
+      height: 100%;
+    }
+    &__title {
+      font-size: 62px;
+    }
+    &__subtitle {
+      font-size: 24px;
+      &-text {
+        font-size: 18px;
+      }
+    }
   }
 }
