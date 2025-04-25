@@ -18,5 +18,35 @@
   }
   &__img {
     margin-top: 32px;
+    height: 200px;
+    width: 100%;
+    clip-path: polygon(100% 0, 100% 80%, 93% 100%, 0 100%, 0 22%, 7% 0);
+    object-fit: cover;
+  }
+  &__large {
+    height: 424px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .about {
+    &__title {
+      font-size: 62px;
+      width: 620px;
+    }
+    &__descr {
+      font-size: 18px;
+    }
+    &__wrapper {
+      display: flex;
+      justify-content: space-around;
+    }
+    &__img {
+      width: 460px;
+    }
+    &__large {
+      padding: 0 36px;
+      width: 100%;
+    }
   }
 }
