@@ -1,7 +1,7 @@
 @use "/src/scss/libs/modern-normolize.scss";
 @use "/src/fonts/fonts.scss";
 @use "/src/scss/layout/container.scss";
-@use "/src/scss/base/variables.scss";
+@use "/src/scss/base/variables.scss" as *;
 @use "/src/scss/base/mixins.scss";
 
 @use "/src/scss/components/title.scss";
@@ -13,3 +13,8 @@
 @use "/src/scss/blocks/ad.scss";
 @use "/src/scss/blocks/buy.scss";
 @use "/src/scss/blocks/footer.scss";
+
+::selection {
+  background-color: $ui-color-selection;
+  color: #000;
+}
