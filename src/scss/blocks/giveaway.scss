@@ -34,7 +34,8 @@
       border: none;
       margin: 0;
       padding: 0;
-      input[type="text"] {
+      input[type="text"],
+      input[type="email"] {
         margin-top: 37px;
         width: 100%;
         padding: 0 13px 13px 0px;
@@ -56,7 +57,7 @@
         display: block;
         background: transparent;
         color: #fff;
-        padding: 50px auto 50px auto;
+        padding: 50px 0 50px 0;
         border: 2px dashed $ui-color-disabled;
         text-decoration: underline;
       }

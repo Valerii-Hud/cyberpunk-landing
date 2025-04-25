@@ -123,23 +123,33 @@
                   name="userName"
                   id="userName"
                   placeholder="What is your name?"
+                  name="userName"
+                  required
                 />
                 <input
-                  type="text"
+                  type="email"
                   name="userEmail"
                   id="userEmail"
                   placeholder="Your email"
+                  name="userEmail"
+                  required
                 />
-                <input type="button" value="Attach a screenshot" />
+                <input
+                  type="button"
+                  value="Attach a screenshot"
+                  name="userScreenshot"
+                  required
+                />
               </fieldset>
             </form>
-            <button class="btn-send giveaway__btn">Send</button>
+            <input type="submit" class="btn-send giveaway__btn">Send</input>
             <label for="userAccept" class="giveaway__accept">
               <input
                 type="checkbox"
                 name="userAccept"
                 id="userAccept"
                 class="giveaway__accept__checkbox"
+                required
               />
               I agree to the processing of personal data
             </label>
