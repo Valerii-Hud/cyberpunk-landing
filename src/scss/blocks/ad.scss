@@ -53,3 +53,18 @@
     width: 230px;
   }
 }
+
+@media screen and (min-width: 1024px) {
+  .ad {
+    &__content {
+      display: flex;
+      row-gap: 32px;
+    }
+    &__wrapper {
+      flex-direction: column;
+    }
+    &__left {
+      padding: 32px;
+    }
+  }
+}
