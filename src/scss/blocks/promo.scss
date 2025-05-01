@@ -59,6 +59,13 @@
     &__icon {
       width: 30px;
       height: 30px;
+      object-fit: cover;
+    }
+    &__cta {
+      padding: 70px 70px 80px 70px;
+      font-size: 62px;
+      width: 630px;
+      height: 370px;
     }
   }
 }
